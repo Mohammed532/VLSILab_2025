@@ -1,0 +1,117 @@
+Using: /usr/synopsys/HSPICE/hspice/O-2018.09-1/hspice/linux64/hspice  -i 'alt.sp'
+ ****** HSPICE -- O-2018.09-1 linux64 (Sep 27 2018) ******                      
+  Copyright (c) 1986 - 2025 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: alt.sp                                                            
+  Command line options: /usr/synopsys/HSPICE/hspice/O-2018.09-1/hspice/linux64/hspice -i alt.sp
+ lic:  
+ lic: FLEXlm: SDK_11.6.9.6 
+ lic: USER:   mohammed             HOSTNAME: husynposyseng 
+ lic: HOSTID: 005056ba9913         PID:      20231 
+ lic: Using FLEXlm license file: 
+ lic: 27020@husynposyseng 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 31-jan-2026/2025.06 
+ lic: 1(in_use)/100(total) FLOATING license(s) on SERVER 27020@husynposyseng 
+ lic:   
+  **warning** (alt.sp:17) print may cause confusion with .print
+  **error** (alt.sp:17)  Negative node number found            token number=   4
+  **error** (alt.sp:17) difficulty in reading input
+
+          ***** job aborted
+1****** HSPICE -- O-2018.09-1 linux64 (Sep 27 2018) ******                      
+ ******  
+ *alt.sp
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Xeon(R) Silver 4215R CPU @ 3.20GHz
+ cpu MHz	: 3198.966
+  
+ OS:
+ Linux version 3.10.0-514.6.2.el7.x86_64 (mockbuild@x86-017.build.eng.bos.redhat.com) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC) ) #1 SMP Fri Feb 17 19:21:31 EST 2017
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     6
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =       0 # elements   =       4
+  # resistors   =       2 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       0
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       0 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       1 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1           0
+  readin             0.81
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        543.93 megabytes
+           total cpu time            0.81 seconds
+           total elapsed time       61.01 seconds
+           job started at     16:57:50 09/15/2025
+           job ended   at     16:58:51 09/15/2025
+
+
+  **warning** (alt.sp:17) print may cause confusion with .print
+  **error** (alt.sp:17)  Negative node number found            token number=   4
+  **error** (alt.sp:17) difficulty in reading input
+
+          ***** job aborted
+ ******  
+ *alt.sp
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+  ******  Circuit Statistics  ******
+  # nodes       =       0 # elements   =       3
+  # resistors   =       1 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       0
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       0 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       1 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1           0
+  readin             0.00
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        543.93 megabytes
+           total cpu time            0.00 seconds
+           total elapsed time        0.01 seconds
+           job started at     16:57:50 09/15/2025
+           job ended   at     16:58:51 09/15/2025
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:       60.12(s)

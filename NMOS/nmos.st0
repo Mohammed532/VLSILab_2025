@@ -1,0 +1,69 @@
+****** HSPICE -- O-2018.09-1 linux64 (Sep 27 2018) ******
+ Input File: nmos.sp
+ lic:
+ lic: FLEXlm: SDK_11.6.9.6
+ lic: USER:   mohammed             HOSTNAME: husynposyseng
+ lic: HOSTID: 005056ba9913         PID:      12582
+ lic: Using FLEXlm license file:
+ lic: 27020@husynposyseng
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 31-jan-2026/2025.06
+ lic: 2(in_use)/100(total) FLOATING license(s) on SERVER 27020@husynposyseng
+ lic:
+ init: begin read circuit files, cpu clock= 7.80E-01
+       option search = /usr/synopsys/HSPICE/hspice/O-2018.09-1/hspice/p
+                         arts/ad
+       option runlvl
+       option macmod =     3.00
+       option post
+ init: end read circuit files, cpu clock= 7.80E-01 peak memory=     283 mb
+ init: begin check errors, cpu clock= 7.80E-01
+ init: end check errors, cpu clock= 7.90E-01 peak memory=     284 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 7.90E-01
+       establish matrix -- done, cpu clock= 7.90E-01 peak memory=     284 mb
+       re-order matrix -- done, cpu clock= 7.90E-01 peak memory=     284 mb
+ init: end setup matrix, cpu clock= 7.90E-01 peak memory=     284 mb
+ sweep: voltage         voltage1         begin, #sweeps =  10
+ voltage: vgs             =    0.00E+00
+ output: nmos.sw0
+ sweep: dc dc1    begin, #sweeps=  37 cpu clock= 7.90E-01
+ sweep: dc dc1    end, cpu clock= 7.90E-01 peak memory=     284 mb
+ voltage: vgs             =    2.00E-01
+ output: nmos.sw0
+ sweep: dc dc2    begin, #sweeps=  37 cpu clock= 7.90E-01
+ sweep: dc dc2    end, cpu clock= 7.90E-01 peak memory=     284 mb
+ voltage: vgs             =    4.00E-01
+ output: nmos.sw0
+ sweep: dc dc3    begin, #sweeps=  37 cpu clock= 7.90E-01
+ sweep: dc dc3    end, cpu clock= 7.90E-01 peak memory=     284 mb
+ voltage: vgs             =    6.00E-01
+ output: nmos.sw0
+ sweep: dc dc4    begin, #sweeps=  37 cpu clock= 7.90E-01
+ sweep: dc dc4    end, cpu clock= 7.90E-01 peak memory=     284 mb
+ voltage: vgs             =    8.00E-01
+ output: nmos.sw0
+ sweep: dc dc5    begin, #sweeps=  37 cpu clock= 7.90E-01
+ sweep: dc dc5    end, cpu clock= 7.90E-01 peak memory=     284 mb
+ voltage: vgs             =    1.00E+00
+ output: nmos.sw0
+ sweep: dc dc6    begin, #sweeps=  37 cpu clock= 7.90E-01
+ sweep: dc dc6    end, cpu clock= 7.90E-01 peak memory=     284 mb
+ voltage: vgs             =    1.20E+00
+ output: nmos.sw0
+ sweep: dc dc7    begin, #sweeps=  37 cpu clock= 7.90E-01
+ sweep: dc dc7    end, cpu clock= 7.90E-01 peak memory=     284 mb
+ voltage: vgs             =    1.40E+00
+ output: nmos.sw0
+ sweep: dc dc8    begin, #sweeps=  37 cpu clock= 7.90E-01
+ sweep: dc dc8    end, cpu clock= 7.90E-01 peak memory=     284 mb
+ voltage: vgs             =    1.60E+00
+ output: nmos.sw0
+ sweep: dc dc9    begin, #sweeps=  37 cpu clock= 7.90E-01
+ sweep: dc dc9    end, cpu clock= 8.00E-01 peak memory=     284 mb
+ voltage: vgs             =    1.80E+00
+ output: nmos.sw0
+ sweep: dc dc10   begin, #sweeps=  37 cpu clock= 8.00E-01
+ sweep: dc dc10   end, cpu clock= 8.00E-01 peak memory=     284 mb
+ sweep: voltage         voltage         1 end
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

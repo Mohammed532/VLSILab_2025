@@ -1,0 +1,78 @@
+Using: /usr/synopsys/HSPICE/hspice/O-2018.09-1/hspice/linux64/hspice  -i 'rc.sp'
+ ****** HSPICE -- O-2018.09-1 linux64 (Sep 27 2018) ******                      
+  Copyright (c) 1986 - 2025 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: rc.sp                                                             
+  Command line options: /usr/synopsys/HSPICE/hspice/O-2018.09-1/hspice/linux64/hspice -i rc.sp
+ lic:  
+ lic: FLEXlm: SDK_11.6.9.6 
+ lic: USER:   mohammed             HOSTNAME: husynposyseng 
+ lic: HOSTID: 005056ba9913         PID:      17197 
+ lic: Using FLEXlm license file: 
+ lic: 27020@husynposyseng 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 31-jan-2026/2025.06 
+ lic: 2(in_use)/100(total) FLOATING license(s) on SERVER 27020@husynposyseng 
+ lic:   
+  **warning** (rc.sp:26) .PLOT is obsolete and it is replaced by .PROBE.
+  **error** (rc.sp:21) Extra numerical data found. Check the syntax.
+  **error** (rc.sp:21) difficulty in reading input
+
+          ***** job aborted
+1****** HSPICE -- O-2018.09-1 linux64 (Sep 27 2018) ******                      
+ ******  
+ *rc.sp
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Xeon(R) Silver 4215R CPU @ 3.20GHz
+ cpu MHz	: 3198.966
+  
+ OS:
+ Linux version 3.10.0-514.6.2.el7.x86_64 (mockbuild@x86-017.build.eng.bos.redhat.com) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC) ) #1 SMP Fri Feb 17 19:21:31 EST 2017
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     6
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =       0 # elements   =       3
+  # resistors   =       1 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       1
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       0 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1           0
+  readin             0.57
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        424.82 megabytes
+           total cpu time            0.58 seconds
+           total elapsed time       54.72 seconds
+           job started at     16:32:03 09/15/2025
+           job ended   at     16:32:58 09/15/2025
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:       54.09(s)
