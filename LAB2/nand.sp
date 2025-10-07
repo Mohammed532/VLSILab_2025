@@ -9,12 +9,12 @@
 *--------CIRCUIT--------
 
 *PULLUP*
-MPb	Y	b	vdd	vdd	p105_HVT	l=? w=?
-MPa	Y	a	vdd	vdd	p105_HVT	l=? w=?		 
+MNPb	Y	b	vdd	vdd	p105_HVT	l=0.03u w=0.54u
+MNPa	Y	a	vdd	vdd	p105_HVT	l=0.03u w=0.54u		 
 
 *PULLDOWN*
-MNb	Y	b	gnd	gnd	n105_HVT	l=? w=?
-MNa	Y	a	gnd	gnd	n105_HVT	l=? w=?
+MNb	Y	b	gnd	gnd	n105_HVT	l=0.03u w=0.54u
+MNa	Y	a	gnd	gnd	n105_HVT	l=0.03u w=0.54u
 
 *--------SOURCES--------
 *Rails
@@ -22,10 +22,12 @@ Vvdd 	vdd 	0 	1.8v
 Vgnd 	gnd	0	0v
 
 *inputs (A,B)
-*NOTE: instead of 0v, do piece-wise linear (PWL)
-Va	a	0	0v
-Vb	b	0	0v
+Va	a	gnd	PULSE 0 1.8 100ps 100ps 100ps 300ps 900ps
+Vb	b	gnd	PULSE 0 1.8 300ps 100ps 100ps 300ps 900ps
 
 *------------------------
+
+.tran 0.1ps 900ps
+.print v(a) v(b) v(out)
 
 .end
