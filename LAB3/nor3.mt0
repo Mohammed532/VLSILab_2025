@@ -1,0 +1,10 @@
+$DATA1 SOURCE='HSPICE' VERSION='O-2018.09-1 linux64' PARAM_COUNT=0
+.TITLE '*** nor3.sp'
+ bl_001_falling   bl_001_rising    bl_010_falling   bl_010_rising   
+ bl_011_falling   bl_011_rising    bl_100_falling   bl_100_rising   
+ bl_101_falling   bl_101_rising    bl_110_falling   bl_110_rising   
+ bl_111_falling   bl_111_rising    temper           alter#          
+  2.272e-11       -4.428e-12        2.587e-11       -2.244e-12      
+  9.289e-12        1.014e-11        3.112e-11       -3.237e-12      
+  8.952e-12        9.184e-12        1.350e-11        1.005e-11      
+  3.867e-12        1.587e-11         70.0000        1               
