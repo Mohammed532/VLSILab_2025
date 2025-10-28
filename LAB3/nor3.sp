@@ -20,9 +20,9 @@ Vc	c	gnd	PWL(0ps 0v, 100ps 0v, 200ps 1.8v, 300ps 1.8v, 400ps 0v, 900ps 0v, 1000p
 *----------CIRCUIT-------------
 
 *PULLUP*
-MMPa 	n2	a	vdd	vdd	p105_HVT	l=0.03u w=3.24u
-MMPb	n1	b	n2	vdd	p105_HVT	l=0.03u w=3.24u
-MMPc	Y	c	n1	vdd	p105_HVT	l=0.03u w=3.24u
+MMPa 	n2	a	vdd	vdd	p105_HVT	l=0.03u w=1.62u
+MMPb	n1	b	n2	vdd	p105_HVT	l=0.03u w=1.62u
+MMPc	Y	c	n1	vdd	p105_HVT	l=0.03u w=1.62u
 
 *PULLDOWN*
 MMNa	Y	a	gnd	gnd	n105_HVT	l=0.03u w=0.27u
