@@ -10,7 +10,7 @@
 
 *---------SUBCIRCUITS-----------
 .global vdd gnd
-.include '/lib/nand2.sp'
+.include 'lib/nand2.sp'
 .include 'lib/nor2.sp'
 
 *---------SOURCES---------------
@@ -22,7 +22,10 @@ Vb b gnd PWL(0ps 0V, 250ps 0V, 300ps 1.8V, 400ps 1.8V, 450ps 0V, 550ps 0V, 600ps
 Vc c gnd PWL(0ps 0V, 100ps 0V, 150ps 1.8V, 250ps 1.8V, 300ps 0V, 400ps 0V, 450ps 1.8V, 850ps 1.8V, 900ps 0V, 1000ps 0V, 1050ps 1.8V, 1450ps 1.8V, 1500ps 0V, 1600ps 0V, 1650ps 1.8V, 2050ps 1.8V)
 *-----------CIRCUIT-------------
 X1	a	b	n1	NOR2
-X2	n1	c	F	NAND2
+X2	n1	c	Y	NAND2
+*-------------------------------
+
+.tran 1ps 2.05ns
 
 .ends
 
