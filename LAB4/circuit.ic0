@@ -1,0 +1,21 @@
+* "simulator" "HSPICE" 
+* "version" "O-2018.09-1 linux64"
+* "format" "HSP"
+* "rundate" "17:47:54 11/02/2025 "
+* "netlist" "circuit.sp "
+* "runtitle" "*** circuit.sp"
+* time =    0.            
+* temperature =   70.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   0.            
++ b =   0.            
++ c =   0.            
++ n1 =   1.7995        
++ vdd =   1.8000        
++ y =   1.7999        
++ x1.n1 =   1.7997        
++ x2.n1 =   1.4583        
+***   END: Saved Operating Point ***                     

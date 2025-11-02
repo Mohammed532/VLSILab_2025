@@ -1,7 +1,6 @@
 *** nand2.sp (subcircuit)
 * Author: Mohammed Akinbayo
 .option macmod = 3
-.lib '../../../saed32nm.lib' TT
 .temp 70
 .option post
 

@@ -1,0 +1,22 @@
+$DATA1 SOURCE='HSPICE' VERSION='O-2018.09-1 linux64' PARAM_COUNT=0
+.TITLE '*** circuit.sp'
+ b_000_falling    b_010_rising     b_010_falling    f12_max         
+ f12_min          b_011_rising     r23_max          r23_min         
+ b_011_falling    f23_max          f23_min          b_100_rising    
+ r34_max          r34_min          b_100_falling    f34_max         
+ f34_min          b_101_rising     r45_max          r45_min         
+ b_101_falling    f45_max          f45_min          b_110_rising    
+ r56_max          r56_min          b_110_falling    f56_max         
+ f56_min          b_111_rising     max_rising       min_rising      
+ b_111_falling    max_falling      min_falling      max_pw          
+ temper           alter#          
+  9.978e-12        1.185e-11        1.890e-11        1.890e-11      
+  9.978e-12        2.147e-11        2.147e-11        1.185e-11      
+  1.788e-11        1.890e-11        9.978e-12        1.164e-11      
+  2.147e-11        1.164e-11        1.931e-11        1.931e-11      
+  9.978e-12        2.320e-11        2.320e-11        1.164e-11      
+  1.838e-11        1.931e-11        9.978e-12        8.306e-12      
+  2.320e-11        8.306e-12        2.453e-11        2.453e-11      
+  9.978e-12        1.373e-11        2.320e-11        8.306e-12      
+  2.405e-11        2.453e-11        9.978e-12        1.628e-04      
+   70.0000        1               
