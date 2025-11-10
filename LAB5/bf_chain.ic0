@@ -1,0 +1,17 @@
+* "simulator" "HSPICE" 
+* "version" "O-2018.09-1 linux64"
+* "format" "HSP"
+* "rundate" "16:47:44 11/10/2025 "
+* "netlist" "bf_chain.sp "
+* "runtitle" "*** bf_chain.sp"
+* time =    0.            
+* temperature =   70.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ i =   0.            
++ n1 =   1.7998        
++ vdd =   1.8000        
++ y = 952.1547u       
+***   END: Saved Operating Point ***                     
