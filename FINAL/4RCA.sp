@@ -100,67 +100,6 @@ Xrc4    A3      B3      C2      S3      C3      vdd     gnd     adder   N='N'   
 .param N = 3
 
 .alter n_scale_4
-*.option measform=3
-
-*---------------------------S0 Delay----------------------
-***RISE***
-.measure tran S0_AhBl_RISE_DELAY
-                + TRIG V(A0) VAL='SUPPLY/2' RISE=1
-                + TARG V(S0) VAL='SUPPLY/2' RISE=1
-.measure tran S0_BlAh_RISE_DELAY
-                + TRIG V(B0) VAL='SUPPLY/2' FALL=1 TD=8.8ns
-                + TARG V(S0) VAL='SUPPLY/2' RISE=1
-.measure tran S0_AlBh_RISE_DELAY
-                + TRIG V(A0) VAL='SUPPLY/2' FALL=1 TD=16ns
-                + TARG V(S0) VAL='SUPPLY/2' RISE=1
-.measure tran S0_BhAl_RISE_DELAY
-                + TRIG V(B0) VAL='SUPPLY/2' RISE=1 TD=25ns
-                + TARG V(S0) VAL='SUPPLY/2' RISE=1
-
-***FALL***
-.measure tran S0_AlBl_FALL_DELAY
-                + TRIG V(A0) VAL='SUPPLY/2' FALL=1
-                + TARG V(S0) VAL='SUPPLY/2' FALL=1
-.measure tran S0_BhAh_FALL_DELAY
-                + TRIG V(B0) VAL='SUPPLY/2' RISE=1 TD=8.8ns
-                + TARG V(S0) VAL='SUPPLY/2' RISE=1
-.measure tran S0_AhBh_FALL_DELAY
-                + TRIG V(A0) VAL='SUPPLY/2' RISE=1 TD=16ns
-                + TARG V(S0) VAL='SUPPLY/2' RISE=1
-.measure tran S0_BlAl_FALL_DELAY
-                + TRIG V(B0) VAL='SUPPLY/2' FALL=1 TD=25ns
-                + TARG V(S0) VAL='SUPPLY/2' RISE=1
-*----------------------------------------------------------
-
-
-*---------------------------S1 Delay----------------------
-**RISE**
-.measure tran S1_
-
-
-*----------------------------------------------------------
-
-.alter p_scale_2
-.param P = 2
-.param N = 1
-
-.alter p_scale_3
-.param P = 3
-.param N = 1
-
-.alter p_scale_4
-.param P = 4
-.param N = 1
-
-.alter n_scale_2
-.param P = 1
-.param N = 2
-
-.alter n_scale_3
-.param P = 1
-.param N = 3
-
-.alter n_scale_4
 .param P = 1
 .param N = 4
 
