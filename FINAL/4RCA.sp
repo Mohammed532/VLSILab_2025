@@ -43,33 +43,34 @@ Xrc4    A3      B3      C2      S3      C3      vdd     gnd     adder   N='N'   
 
 *---------------------------S0 Delay----------------------
 ***RISE***
-.measure tran S0_AhBl_RISE_DELAY
+.measure tran S0_ArBl_RISE_DELAY
                 + TRIG V(A0) VAL='SUPPLY/2' RISE=1
                 + TARG V(S0) VAL='SUPPLY/2' RISE=1
-.measure tran S0_BlAh_RISE_DELAY
+.measure tran S0_BfAh_RISE_DELAY
                 + TRIG V(B0) VAL='SUPPLY/2' FALL=1 TD=8.8ns
                 + TARG V(S0) VAL='SUPPLY/2' RISE=1
-.measure tran S0_AlBh_RISE_DELAY
+.measure tran S0_AfBh_RISE_DELAY
                 + TRIG V(A0) VAL='SUPPLY/2' FALL=1 TD=16ns
                 + TARG V(S0) VAL='SUPPLY/2' RISE=1
-.measure tran S0_BhAl_RISE_DELAY
+.measure tran S0_BrAl_RISE_DELAY
                 + TRIG V(B0) VAL='SUPPLY/2' RISE=1 TD=25ns
                 + TARG V(S0) VAL='SUPPLY/2' RISE=1
 
 ***FALL***
-.measure tran S0_AlBl_FALL_DELAY
+.measure tran S0_AfBl_FALL_DELAY
                 + TRIG V(A0) VAL='SUPPLY/2' FALL=1
                 + TARG V(S0) VAL='SUPPLY/2' FALL=1
-.measure tran S0_BhAh_FALL_DELAY
-                + TRIG V(B0) VAL='SUPPLY/2' RISE=1 TD=8.8ns
+.measure tran S0_BrAh_FALL_DELAY
+                + TRIG V(B0) VAL='SUPPLY/2' RISE=1 TD=8ns
                 + TARG V(S0) VAL='SUPPLY/2' RISE=1
-.measure tran S0_AhBh_FALL_DELAY
-                + TRIG V(A0) VAL='SUPPLY/2' RISE=1 TD=16ns
+.measure tran S0_ArBh_FALL_DELAY
+                + TRIG V(A0) VAL='SUPPLY/2' RISE=1 TD=17ns
                 + TARG V(S0) VAL='SUPPLY/2' RISE=1
-.measure tran S0_BlAl_FALL_DELAY
-                + TRIG V(B0) VAL='SUPPLY/2' FALL=1 TD=25ns
+.measure tran S0_BfAl_FALL_DELAY
+                + TRIG V(B0) VAL='SUPPLY/2' FALL=1 TD=24ns
                 + TARG V(S0) VAL='SUPPLY/2' RISE=1
 *----------------------------------------------------------
+
 
 
 *---------------------------S1 Delay----------------------
