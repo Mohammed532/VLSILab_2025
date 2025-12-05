@@ -73,11 +73,118 @@ Xrc4    A3      B3      C2      S3      C3      vdd     gnd     adder   N='N'   
 
 
 *---------------------------S1 Delay----------------------
-**RISE**
-.measure tran S1_
+***RISE***
+.measure tran S1_ArBlCl_RISE_DELAY
+                + TRIG V(A1) VAL='SUPPLY/2' RISE=1
+                + TARG V(S1) VAL='SUPPLY/2' RISE=1
+.measure tran S1_CrAhBh_RISE_DELAY
+                + TRIG V(C0) VAL='SUPPLY/2' RISE=1 TD=9ns
+                + TARG V(S1) VAL='SUPPLY/2' RISE=1
+.measure tran S1_CfAlBh_RISE_DELAY
+                + TRIG V(A1) VAL='SUPPLY/2' FALL=1 TD=17.6ns
+                + TARG V(S1) VAL='SUPPLY/2' RISE=1
+.measure tran S1_BrAlCl_RISE_DELAY
+                + TRIG V(B1) VAL='SUPPLY/2' RISE=1 TD=26ns
+                + TARG V(S1) VAL='SUPPLY/2' RISE=1
 
+***FALL***
+.measure tran S1_AfBlCl_FALL_DELAY
+                + TRIG V(A1) VAL='SUPPLY/2' FALL=1
+                + TARG V(S1) VAL='SUPPLY/2' FALL=1
+.measure tran S1_CrAhBl_FALL_DELAY
+                + TRIG V(C0) VAL='SUPPLY/2' RISE=1 TD=8.3ns
+                + TARG V(S1) VAL='SUPPLY/2' FALL=1
+.measure tran S1_CfAhBh_FALL_DELAY
+                + TRIG V(A1) VAL='SUPPLY/2' FALL=1 TD=18.6ns
+                + TARG V(S1) VAL='SUPPLY/2' FALL=1
+.measure tran S1_BfAlCl_FALL_DELAY
+                + TRIG V(B1) VAL='SUPPLY/2' RISE=1 TD=25ns
+                + TARG V(S1) VAL='SUPPLY/2' FALL=1
+*---------------------------------------------------------
 
-*----------------------------------------------------------
+*---------------------------S2 Delay----------------------
+***RISE***
+.measure tran S2_ArBlCl_RISE_DELAY
+                + TRIG V(A2) VAL='SUPPLY/2' RISE=1
+                + TARG V(S2) VAL='SUPPLY/2' RISE=1
+.measure tran S2_CrAhBh_RISE_DELAY
+                + TRIG V(C1) VAL='SUPPLY/2' RISE=1 TD=10.3ns
+                + TARG V(S2) VAL='SUPPLY/2' RISE=1
+.measure tran S2_CfAlBh_RISE_DELAY
+                + TRIG V(A2) VAL='SUPPLY/2' FALL=1 TD=19.8ns
+                + TARG V(S2) VAL='SUPPLY/2' RISE=1
+.measure tran S2_BrAlCl_RISE_DELAY
+                + TRIG V(B2) VAL='SUPPLY/2' RISE=1 TD=28ns
+                + TARG V(S2) VAL='SUPPLY/2' RISE=1
+
+***FALL***
+.measure tran S2_AfBlCl_FALL_DELAY
+                + TRIG V(A2) VAL='SUPPLY/2' FALL=1
+                + TARG V(S2) VAL='SUPPLY/2' FALL=1
+.measure tran S2_CrAhBl_FALL_DELAY
+                + TRIG V(C1) VAL='SUPPLY/2' RISE=1 TD=8ns
+                + TARG V(S2) VAL='SUPPLY/2' FALL=1
+.measure tran S2_CfAhBh_FALL_DELAY
+                + TRIG V(A2) VAL='SUPPLY/2' FALL=1 TD=17.5ns
+                + TARG V(S2) VAL='SUPPLY/2' FALL=1
+.measure tran S2_BfAlCl_FALL_DELAY
+                + TRIG V(B2) VAL='SUPPLY/2' RISE=1 TD=26ns
+                + TARG V(S2) VAL='SUPPLY/2' FALL=1
+*---------------------------------------------------------
+
+*---------------------------S3 Delay----------------------
+***RISE***
+.measure tran S3_ArBlCl_RISE_DELAY
+                + TRIG V(A3) VAL='SUPPLY/2' RISE=1
+                + TARG V(S3) VAL='SUPPLY/2' RISE=1
+.measure tran S3_CrAhBh_RISE_DELAY
+                + TRIG V(C2) VAL='SUPPLY/2' RISE=1 TD=12.5ns
+                + TARG V(S3) VAL='SUPPLY/2' RISE=1
+.measure tran S3_CfAlBh_RISE_DELAY
+                + TRIG V(A3) VAL='SUPPLY/2' FALL=1 TD=22ns
+                + TARG V(S3) VAL='SUPPLY/2' RISE=1
+*.measure tran S1_BrAlCl_RISE_DELAY
+*               + TRIG V(B0) VAL='SUPPLY/2' RISE=1 TD=28ns
+*               + TARG V(S0) VAL='SUPPLY/2' RISE=1
+
+***FALL***
+*.measure tran S1_AfBlCl_RISE_DELAY
+*               + TRIG V(A1) VAL='SUPPLY/2' FALL=1
+*               + TARG V(S1) VAL='SUPPLY/2' FALL=1
+.measure tran S3_CrAhBl_FALL_DELAY
+                + TRIG V(C2) VAL='SUPPLY/2' RISE=1 TD=8ns
+                + TARG V(S3) VAL='SUPPLY/2' FALL=1
+.measure tran S3_CfAhBh_FALL_DELAY
+                + TRIG V(A3) VAL='SUPPLY/2' FALL=1 TD=18ns
+                + TARG V(S3) VAL='SUPPLY/2' FALL=1
+.measure tran S3_BfAlCl_FALL_DELAY
+                + TRIG V(B3) VAL='SUPPLY/2' RISE=1 TD=28.4ns
+                + TARG V(S3) VAL='SUPPLY/2' FALL=1
+*---------------------------------------------------------
+
+*---------------------------COUT Delay----------------------
+***RISE***
+.measure tran COUT_CrAhBl_RISE_DELAY
+                + TRIG V(C2) VAL='SUPPLY/2' RISE=1
+                + TARG V(C3) VAL='SUPPLY/2' RISE=1
+.measure tran COUT_CrAhBh_RISE_DELAY
+                + TRIG V(C2) VAL='SUPPLY/2' RISE=1 TD=18.2ns
+                + TARG V(C3) VAL='SUPPLY/2' RISE=1
+
+***FALL***
+.measure tran COUT_CfAhBl_FALL_DELAY
+                + TRIG V(C2) VAL='SUPPLY/2' FALL=1 TD=9.8ns
+                + TARG V(C3) VAL='SUPPLY/2' FALL=1
+.measure tran COUT_CfAlBh_FALL_DELAY
+                + TRIG V(C2) VAL='SUPPLY/2' FALL=1 TD=17.6ns
+                + TARG V(C3) VAL='SUPPLY/2' FALL=1
+*---------------------------------------------------------
+
+*------------------------POWERRRRRR-----------------------
+.measure tran avg_power AVG par('V(vdd)*i(Vvdd)') FROM=0ps TO=33ns
+.measure tran max_power MAX par('V(vdd)*i(Vvdd)') FROM=0ps TO=33ns
+*---------------------------------------------------------
+
 
 .alter p_scale_2
 .param P = 2
